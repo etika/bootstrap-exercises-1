@@ -2,5 +2,32 @@
   #cover-caption
     .container
       .col-sm-10.col-sm-offset-1
-        %h1 Welcome To Bootstrap 4
+        %h1.display-3 Welcome To Bootstrap 4
         %p= lorem_ipsum
+        %form.form-inline
+          .form-group
+            %label.sr-only Name
+            %input.form-control.form-control-lg{placeholder:"Jane Doe"}
+          .form-group
+            %label.sr-only Email
+            %input.form-control.form-control-lg{placeholder:"jane.doe@yahoo.com"}
+          %button.btn.btn-success.btn-lg{type:"submit"}GO!
+          %br
+          %a.btn.btn-outline-secondary.btn-sm{href: "#nav-main", role: "button"} &darr;
+
+%nav.navbar.navbar-dark.bg-inverse.navbar-full#nav-main
+  %a.navbar-brand{href: "#"} The Logo
+  %ul.nav.navbar-nav
+    %li.nav-item.active
+      %a.nav-link{href: "#"}
+        Home
+        %span.sr-only (current)
+    %li.nav-item
+      %a.nav-link{href: "#"} Features
+    %li.nav-item
+      %a.nav-link{href: "#"} Pricing
+    %li.nav-item
+      %a.nav-link{href: "#"} About
+  %form.form-inline.pull-xs-right
+    %input.form-control{placeholder: "Search", type: "text"}/
+    %button.btn.btn-outline-success{type: "submit"} Search
