@@ -55,3 +55,36 @@
       %span.icon-prev
     %a.right.carousel-control{"data-slide" => "next", href: "#carousel-home"}
       %span.icon-next
+
+%section#what-we-do
+  .section-content
+    .container
+      %h2 What we do
+      %p.lead= lorem_ipsum
+      .row
+        .col-sm-12
+          .card-group
+            .card
+              .card-block
+                %h4.card-title Strategy & Planning
+                %h6.card-subtitle Support card subtitle
+                %img{src:"/img/chalkboard.jpg"}
+              .card-block
+                %p.card-text= lorem_ipsum(words: 20)
+                %button.btn.btn-outline-success{"data-toggle" => "modal", "data-target" => "#myModal"} learn more
+            .card
+              .card-block
+                %h4.card-title Creative & Design
+                %h6.card-subtitle Support card subtitle
+                %img{src:"/img/working.jpg"}
+              .card-block
+                %p.card-text= lorem_ipsum(words: 25)
+                %button.btn.btn-outline-success{"data-toggle" => "modal", "data-target" => "#myModal"} learn more
+            .card
+              .card-block
+                %h4.card-title Programming & Technical
+                %h6.card-subtitle Support card subtitle
+                %img{src:"/img/programming.jpg"}
+              .card-block
+                %p.card-text= lorem_ipsum(words: 50)
+                %button.btn.btn-outline-success{"data-toggle" => "modal", "data-target" => "#myModal"} learn more
