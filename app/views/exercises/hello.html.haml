@@ -88,3 +88,117 @@
               .card-block
                 %p.card-text= lorem_ipsum(words: 50)
                 %button.btn.btn-outline-success{"data-toggle" => "modal", "data-target" => "#myModal"} learn more
+
+%section#about
+  .section-content
+    .container
+      .col-md-6
+        .about-text
+          %h3 About me
+          %p.lead= lorem_ipsum(words: 20)
+          %p= lorem_ipsum(words: 20)
+          %h5 Follow me on the web
+          %a.btn.btn-sm.btn-outline-secondary twitter
+          %a.btn.btn-sm.btn-outline-secondary facebook
+          %a.btn.btn-sm.btn-outline-secondary youtube
+
+%section#news
+  .section-content
+    .container
+      %h3 Latest news
+      %p.lead= lorem_ipsum(words: 20)
+      .row
+        .col-sm-12
+          .card-columns
+            .card
+              %img.card-img-top{src: "/img/woman-camera.jpg"}/
+              .card-block
+                %h4.card-title Card title that wraps to a new line
+                %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            .card.card-block
+              %blockquote.card-blockquote
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                %footer
+                  %small.text-muted
+                    Someone famous in
+                    %cite{:title => "Source Title"} Source Title
+            .card
+              %img.card-img-top{src: "/img/stars.jpg"}/
+              .card-block
+                %h4.card-title Card title
+                %p.card-text This card has supporting text below as a natural lead-in to additional content.
+                %p.card-text
+                  %small.text-muted Last updated 3 mins ago
+            .card.card-block.card-inverse.card-primary.text-xs-center
+              %blockquote.card-blockquote
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                %footer
+                  %small
+                    Someone famous in
+                    %cite{:title => "Source Title"} Source Title
+            .card.card-block.text-xs-center
+              %h4.card-title Card title
+              %p.card-text This card has supporting text below as a natural lead-in to additional content.
+              %p.card-text
+                %small.text-muted Last updated 3 mins ago
+            .card
+              %img.card-img{src: "/img/computer.jpg"}/
+            .card.card-block.text-xs-right.card-warning.card-inverse
+              %blockquote.card-blockquote
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                %footer
+                  %small.text-muted
+                    Someone famous in
+                    %cite{:title => "Source Title"} Source Title
+            .card.card-block
+              %h4.card-title Card title
+              %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              %p.card-text
+                %small.text-muted Last updated 3 mins ago
+
+      %hr
+
+      %nav.text-xs-center
+        %ul.pagination
+          %li.page-item
+            %a.page-link{:href => "#"}
+              %span «
+          %li.page-item
+            %a.page-link{:href => "#"} 1
+          %li.page-item
+            %a.page-link{:href => "#"} 2
+          %li.page-item
+            %a.page-link{:href => "#"} 3
+          %li.page-item
+            %a.page-link{:href => "#"} 4
+          %li.page-item
+            %a.page-link{:href => "#"} 5
+          %li.page-item
+            %a.page-link{:href => "#"}
+              %span »
+
+%footer#footer-main
+  .container
+    .row
+      .col-sm-3
+        %p uncopyright 2015
+        %p
+          coded by
+          %a{href: "#"} taw
+      .col-sm-3
+        %ul.list-unstyled
+          %li
+            %a{href: "#"} home
+            %a{href: "#"} what we do
+            %a{href: "#"} about
+            %a{href: "#"} latest
+      .col-sm-3
+        %ul.list-unstyled
+          %li
+            %a{href: "#"} facebook
+            %a{href: "#"} twitter
+            %a{href: "#"} youtube
+            %a{href: "#"} linkedin
+      .col-sm-3
+        %h6 tiny header
+        %p= lorem_ipsum(words: 30)
