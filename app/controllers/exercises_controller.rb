@@ -6,4 +6,8 @@ class ExercisesController < ApplicationController
   def band
     @stylesheet = "band"
   end
+
+  def startup
+    @stylesheet = "startup"
+  end
 end

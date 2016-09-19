@@ -1,0 +1,25 @@
+%nav.navbar.navbar-light.bg-faded.navbar-fixed-top
+  %button.navbar-toggler.hidden-sm-up{"data-target" => "#startupNavbar", "data-toggle" => "collapse", :type => "button"}
+    ☰
+  %a.navbar-brand{href: "#"}
+    %img{src:"/img/logo.png", height: 26}
+  #startupNavbar.collapse.navbar-toggleable-xs
+    %ul.nav.navbar-nav.pull-sm-right
+      %li.nav-item.active
+        %a.nav-link{href: "#"}
+          Home
+      %li.nav-item
+        %a.nav-link{href: "#"} Features
+      %li.nav-item
+        %a.nav-link{href: "#"} Pricing
+      %li.nav-item
+        %a.nav-link{href: "#"} Blog
+      %li.nav-item
+        %a.btn.btn-primary{href: "#"} Sign in
+
+
+#stage
+  #stage-caption
+    %h1.display-3 Why Have Donut When You Can Have Startup?
+    %p I see startup.logo in your future
+    %a.btn.btn-lg.btn-success Sing up right now
