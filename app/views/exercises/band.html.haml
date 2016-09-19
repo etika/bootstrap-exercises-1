@@ -1,0 +1,50 @@
+#navbar-header.navbar-collapse.collapse.inverse
+  .container-fluid
+    .about
+      %h4 About
+      %p.text-muted Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+    .social
+      %h4 Contact
+      %ul.list-unstyled
+        %li
+          %a{:href => "#"} Follow on Twitter
+        %li
+          %a{:href => "#"} Like on Facebook
+        %li
+          %a{:href => "#"} Email me
+.navbar.navbar-static-top.navbar-dark.bg-inverse
+  .container-fluid
+    %button.navbar-toggler{"data-target" => "#navbar-header", "data-toggle" => "collapse", :type => "button"}
+      ☰
+    %a.navbar-brand{:href => "#"} The Pinky & The Brain
+%section.jumbotron.text-xs-center
+  .container
+    %h1.jumbotron-heading The Pinky & The Brain
+    %p.lead= lorem_ipsum(words: 30)
+    %div
+      %a.btn.btn-info{:href => "#"} Main call to action
+      %a.btn.btn-secondary{:href => "#"} Secondary action
+.album.text-muted
+  .container
+    .row
+      .card
+        %img{:alt => "Card image cap", "src" => "/img/guitar.jpg"}/
+        %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      .card
+        %img{:alt => "Card image cap", "src" => "/img/lady-guitar.jpg"}/
+        %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      .card
+        %img{:alt => "Card image cap", "src" => "/img/mic.jpg"}/
+        %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      .card
+%footer.text-muted
+  .container
+    %p.pull-xs-right
+      %a{:href => "#"} Back to top
+    %p Album example is © Bootstrap, but please download and customize it for yourself!
+    %p
+      New to Bootstrap?
+      %a{:href => "../../"} Visit the homepage
+      or read our
+      = succeed "." do
+        %a{:href => "../../getting-started/"} getting started guide
