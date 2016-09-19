@@ -66,6 +66,13 @@ img {
   }
 }
 
+@media screen and (min-width: 991px) {
+  .feature-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .feature-dark {
   background: #262f36;
   color: white;
@@ -74,9 +81,27 @@ img {
   }
 }
 
-@media screen and (min-width: 991px) {
-  .feature-content {
-    display: flex;
-    align-items: center;
+.feature-alt {
+  background: #f0f0f0;
+}
+
+#feature-four .feature-content {
+  padding: 0;
+}
+
+#feature-five img {
+  margin-top: 2rem;
+}
+
+#main-footer {
+  background: #262f36;
+  color: white;
+  padding: 6rem 0;
+  font-size: 0.8rem;
+  h6 {
+    color: #718fa9;
+  }
+  a {
+    color: #6c6f73;
   }
 }
