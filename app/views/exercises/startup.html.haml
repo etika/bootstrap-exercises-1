@@ -17,9 +17,32 @@
       %li.nav-item
         %a.btn.btn-primary{href: "#"} Sign in
 
-
 #stage
   #stage-caption
     %h1.display-3 Why Have Donut When You Can Have Startup?
     %p I see startup.logo in your future
     %a.btn.btn-lg.btn-success Sing up right now
+
+%section#feature-one
+  .container
+    .row
+      .feature-content
+        .col-lg-6
+          %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/ZTLAx3VDX7g", :width => "100%", height: "315"}
+        .col-lg-5.offset-lg-1
+          %h6 Watch this
+          %h2 Witness the power of startup.logo
+          %p.lead= lorem_ipsum(words: 10)
+          %p= lorem_ipsum(words: 25)
+
+%section#feature-two.feature-dark
+  .container
+    .row
+      .feature-content
+        .col-lg-6.feature-caption
+          %h6 Incredible featrure
+          %h2= lorem_ipsum(words: 10)
+          %p.lead=  lorem_ipsum(words: 25)
+          %a.btn.btn-outline-secondary.btn-lg{href:"#"} Get in on the action
+        .col-lg-6.text-sm-center.hidden-sm-down
+          %img{src: "/img/iphone-1.png"}
